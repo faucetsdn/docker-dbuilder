@@ -1,6 +1,6 @@
 ## Image name: faucet/dbuilder-pi
 
-FROM multiarch/debian-debootstrap:armhf-stretch
+FROM multiarch/ubuntu-debootstrap:armhf-bionic
 
 RUN apt-get update && \
   apt-get install -y equivs devscripts dpkg-dev quilt curl nano apt-transport-https apt-utils ssl-cert ca-certificates gnupg lsb-release debhelper dh-systemd git && \
